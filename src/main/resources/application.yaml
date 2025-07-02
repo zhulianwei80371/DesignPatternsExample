@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: patters
+
+  aop:
+    proxy-target-class: false
+    # 默认值true 即只采用CGLIB代理
+    # spring boot 应用默认使用AOP, 对象拥有接口则采用Jdk动态代理, 否则采用cglib动态代理
+
+server:
+  port: 8999
+
+logging:
+  level:
+    org:
+      springframework:
+        beans: debug
+        aop: debug
